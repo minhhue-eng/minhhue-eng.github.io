@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ex02</title>
+
+<script>
+    var txta = prompt("Enter number A:");
+    
+    if (txta === null || txta.trim() === "" || isNaN(txta)) {
+        alert("Number A is formatted incorrect");
+    } else {
+        var txtb = prompt("Enter number B:");
+        
+        if (txtb === null || txtb.trim() === "" || isNaN(txtb)) {
+            alert("Number B is formatted incorrect");
+        } else {
+            var a = Number(txta);
+            var b = Number(txtb);
+            var result = a + b;
+
+            alert("Result:\n" + a + " + " + b + " = " + result);
+        }
+    }
+</script>
+
+</head>
+<body>
+</body>
+</html>
